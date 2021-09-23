@@ -1,0 +1,18 @@
+{
+  "name": "scrap-productlist-fromwesite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "cheerio": "^1.0.0-rc.10",
+    "puppeteer": "^10.4.0",
+    "request": "^2.88.2"
+  }
+}
