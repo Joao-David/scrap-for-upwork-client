@@ -6,10 +6,7 @@ const scraperObject = {
         await page.goto(this.url);
         // Wait for the required DOM to be rendered
         await page.waitForSelector('.product-container');
-        // Get the link to all the required books
         let urls = await page.$$eval('.JIIxO > ._1OUGS', links => {
-            // Make sure the book to be scraped is in stock
-            //links = links.filter(link => link.querySelector('.instock.availability > i').textContent !== "In stock")
             // Extract the links from the data
             links = links.map(el => el.querySelector('._1OUGS > ._9tla3').href)
             return links;
